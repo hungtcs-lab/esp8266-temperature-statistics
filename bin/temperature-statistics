@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+const config = require('../config/config.json');
+const Server = require('../lib/server');
+const logger = require('../lib/utils/logger');
+
+const server = new Server();
+
+server.start(config.server.port, () => {
+  logger.info(`server startup at port ${ config.server.port }`);
+});

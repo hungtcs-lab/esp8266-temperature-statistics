@@ -1,0 +1,21 @@
+{
+  "name": "esp8266-temperature-statistics",
+  "version": "0.0.1",
+  "description": "基于网页的室温统计工具",
+  "main": "index.js",
+  "repository": "https://github.com/hungtcs-lab/esp8266-temperature-statistics.git",
+  "author": "鸿则 <hungtcs@163.com>",
+  "license": "GPL-3.0",
+  "private": true,
+  "scripts": {
+    "start": "node bin/temperature-statistics",
+    "debug": "nodemon bin/temperature-statistics"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "log4js": "^2.5.3",
+    "nunjucks": "^3.1.2",
+    "sequelize": "^4.37.7"
+  }
+}
