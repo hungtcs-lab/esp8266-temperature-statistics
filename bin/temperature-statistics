@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const config = require('../config/config.json');
+const config = require('../lib/utils/config');
 const Server = require('../lib/server');
 const Storage = require('../lib/storage');
 const logger = require('../lib/utils/logger');

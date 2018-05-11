@@ -1,0 +1,10 @@
+
+
+server:
+  port: 8888
+
+nunjucks:
+  autoescape: true
+
+logger:
+  category: development
