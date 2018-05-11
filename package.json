@@ -15,7 +15,9 @@
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
     "log4js": "^2.5.3",
+    "moment": "^2.22.1",
     "nunjucks": "^3.1.2",
-    "sequelize": "^4.37.7"
+    "sequelize": "^4.37.7",
+    "sqlite3": "^4.0.0"
   }
 }

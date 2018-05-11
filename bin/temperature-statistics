@@ -1,10 +1,16 @@
 #!/usr/bin/env node
 const config = require('../config/config.json');
 const Server = require('../lib/server');
+const Storage = require('../lib/storage');
 const logger = require('../lib/utils/logger');
 
-const server = new Server();
+const storage = new Storage();
+const server = new Server({ storage });
 
-server.start(config.server.port, () => {
-  logger.info(`server startup at port ${ config.server.port }`);
+storage.connection().then(() => {
+  server.start(config.server.port, () => {
+    logger.info(`server startup at port ${ config.server.port }`);
+  });
+}).catch(err => {
+  logger.error(err);
 });
