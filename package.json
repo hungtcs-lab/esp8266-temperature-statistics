@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node bin/temperature-statistics",
     "debug": "nodemon bin/temperature-statistics",
-    "archive": "mkdir -p archives && git archive --format=zip --output=archives/master.zip origin"
+    "archive": "mkdir -p archives && git archive --format=zip --output=archives/master.zip master"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
