@@ -56,5 +56,9 @@ typings/
 # dotenv environment variables file
 .env
 
+*.sqlite
+
 data/*
 !data/.gitkeep
+
+archives/

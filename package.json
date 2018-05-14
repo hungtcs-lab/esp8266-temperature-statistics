@@ -9,7 +9,8 @@
   "private": true,
   "scripts": {
     "start": "node bin/temperature-statistics",
-    "debug": "nodemon bin/temperature-statistics"
+    "debug": "nodemon bin/temperature-statistics",
+    "archive": "mkdir -p archives && git archive --format=zip --output=archives/master.zip origin"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
@@ -17,9 +18,9 @@
     "js-yaml": "^3.11.0",
     "log4js": "^2.5.3",
     "moment": "^2.22.1",
+    "mysql2": "^1.5.3",
     "nunjucks": "^3.1.2",
     "sequelize": "^4.37.7",
-    "socket.io": "^2.1.0",
-    "sqlite3": "^4.0.0"
+    "socket.io": "^2.1.0"
   }
 }

@@ -1,0 +1,21 @@
+
+server:
+  prefix: /
+  port: 3001
+
+storage:
+  database: temperature
+  username: temperature
+  password: temperature
+  host: 127.0.0.1
+  port: 3306
+  pool:
+    max: 10,
+    idle: 30000,
+    acquire: 60000,
+
+nunjucks:
+  autoescape: true
+
+logger:
+  category: production
