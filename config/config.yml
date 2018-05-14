@@ -7,4 +7,4 @@ nunjucks:
   autoescape: true
 
 logger:
-  category: development
+  category: production
