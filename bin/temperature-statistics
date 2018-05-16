@@ -4,12 +4,13 @@ const Server = require('../lib/server');
 const Storage = require('../lib/storage');
 const logger = require('../lib/utils/logger');
 
-const storage = new Storage();
-const server = new Server({ storage });
+const server = new Server();
 
-storage.connection().then(() => {
+logger.info(`connecting to database`);
+Storage.sequelize.sync().then(() => {
+  logger.info(`connected to database and test success`);
   server.start(config.server.port, () => {
-    logger.info(`server startup at port ${ config.server.port }`);
+    logger.info(`server startup  ::${ config.server.port }`);
   });
 }).catch(err => {
   logger.error(err);
