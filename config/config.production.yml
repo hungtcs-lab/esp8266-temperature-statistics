@@ -9,6 +9,7 @@ storage:
   password: temperature
   host: 127.0.0.1
   port: 3306
+  timezone: Asia/Shanghai
   pool:
     max: 10,
     idle: 30000,
